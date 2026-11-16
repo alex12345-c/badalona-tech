@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ca">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -32,6 +32,49 @@
         </div>
     </header>
 
-    <h2>aqui van las activitats</h2>
+    <h2>Inscripcio a la fira</h2>
+    <p>Omple el formulari seguent epr inscriure't a la badalona tech 2027.</p>
+    
+    <form action="get">
+        <fieldset style="border: 1px solid rgb(149, 192, 226); border-radius: 10px;">
+            <legend style=" border-radius: 10px; font-size: 30px; border: 1px solid rgb(149, 192, 226); background-color: rgb(149, 192, 226);">Dades personals</legend>
+            <label for="nom">Nom complet *</label> 
+            <input type="text" name="nom" id="nom" placeholder="Nom i cognoms" required> 
+            
+            <label for="correo">Correo electronic *</label>
+            <input type="email" name="correo" id="correo" placeholder="nom@exemple.cat" required>
+            <br>
+            <label for="telefon">Telèfon</label>
+            <input type="tel" name="telefon" id="telefon" placeholder="600 000 000" minlength="11" maxlength="11">
+        </fieldset>
+
+        <fieldset style="border: 1px solid rgb(149, 192, 226); border-radius: 10px;">
+            <legend style="border-radius: 10px; font-size: 30px; border: 1px solid rgb(149, 192, 226); background-color: rgb(149, 192, 226);">Activitat i preferencies</legend>
+            <label for="dia">Dia d'assitencia *</label><br>
+            <input type="radio" name="dia" id="dia" required>
+            <label for="dia">Dissabte</label>
+            <input type="radio" name="dia" id="dia" required>
+            <label for="dia">Diumenge</label>
+
+            <br>
+            <label for="observacio">Observacions</label><br>
+            <textarea rows="4" cols="30" name="obsevacio" id="observacio">Escriu aqui les teves observacions...</textarea>
+
+            <br>
+            <input type="checkbox" name="check" id="check">
+            <label for="check">Rebre informacio sobre futures activitats</label><br>
+            <input type="checkbox" name="check" id="check">
+            <label for="check">Acceptar les condicions de participacio * </label>
+
+        </fieldset>
+
+        <button style="background-color: rgb(57, 57, 216);color: white; " type="submit">Enviar inscripcio</button>
+        <button style="border: 2px solid blue;color: blue;border-radius: 8px;" type="reset">Netejar</button>
+        <footer class="pie">
+            <p>Badalona Tech 2027 - Portal informatiu -  Info@badalonatech.cat</p>
+        </footer>
+
+
+    </form>
 </body>
 </html>
